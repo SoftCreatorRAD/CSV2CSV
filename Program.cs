@@ -9,9 +9,13 @@ namespace csv2csv
 	{
 		static void Main(string[] args)
 		{
+			Console.WriteLine("CSV2CSV: Transforms CSV to CSV with field, wrapped in double-quotes.");
+			Console.WriteLine("--------------------------------------------------------------------");
+
+
 			if (args.Length < 1)
 			{
-				Console.WriteLine("Insufficient numebr of arguments.");
+				Console.WriteLine("Insufficient number of arguments.");
 				Console.WriteLine("Expected at least full path to source CSV.");
 				Console.WriteLine("Ex.: csv2csv.exe  c:\\temp\\temp.csv");
 				Console.WriteLine("Or full path to source CSV and target CSV");
